@@ -90,12 +90,14 @@ const NavBar = () => {
         <i
           className="navBtn bi bi-x cursor-pointer z-[9999999]"
           ref={listIcon}
-          onClick={handleToggle}></i>
+          onClick={handleToggle}
+        ></i>
       ) : (
         <i
           className="navBtn bi bi-list cursor-pointer z-[9999999]"
           ref={listIcon}
-          onClick={handleToggle}></i>
+          onClick={handleToggle}
+        ></i>
       )}
     </div>
   );
