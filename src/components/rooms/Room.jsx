@@ -22,7 +22,7 @@ const booking = ({ handleEdit, booking }) => {
   // console.log(editedbooking);
   const handleSubmit = async () => {
     const data = await axios.put(
-      `http://localhost:8000/bookings/edit/${booking._id}`,
+      `https://hotel-management-hjzi.onrender.com/bookings/edit/${booking._id}`,
       editedbooking
     );
     // console.log(data)

@@ -10,7 +10,7 @@ const Rooms = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/bookings/view")
+      .get("https://hotel-management-hjzi.onrender.com/bookings/view")
       .then((response) => {
         // console.log("Bookings fetched:", response.data.bookings);
         setBookings(response.data.bookings);

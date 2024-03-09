@@ -48,7 +48,7 @@ const BookingForm = () => {
     // };
     // console.log(data);
     await axios
-      .post("http://localhost:8000/bookings/book", data)
+      .post("https://hotel-management-hjzi.onrender.com/bookings/book", data)
       .then((response) => {
         console.log("Booking Successful:", response.data);
         alert("Booking successful");
@@ -56,7 +56,9 @@ const BookingForm = () => {
         // Handle success, e.g., show a success message to the user
       })
       .catch((error) => {
-        alert("Please Change the Date Room Alrwady Booked Or Room not exist  Choosed Room number from 1 to 100");
+        alert(
+          "Please Change the Date Room Alrwady Booked Or Room not exist  Choosed Room number from 1 to 100"
+        );
         console.error("Error:", error);
         // Handle error, e.g., show an error message to the user
       });
