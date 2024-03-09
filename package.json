@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject",
+    "build": "vite build",
+    "eject": "vite eject",
     "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" "
   },
   "dependencies": {
