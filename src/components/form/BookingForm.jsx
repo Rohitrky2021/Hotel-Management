@@ -57,7 +57,7 @@ const BookingForm = () => {
       })
       .catch((error) => {
         alert(
-          "Please Change the Date Room Alrwady Booked Or Room not exist  Choosed Room number from 1 to 100"
+          "Please Change the Date Room Already Booked Or Room not exist  Choosed Room number from 1 to 100"
         );
         console.error("Error:", error);
         // Handle error, e.g., show an error message to the user

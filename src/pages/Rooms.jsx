@@ -9,6 +9,7 @@ const Rooms = () => {
   const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
+   
     axios
       .get("https://hotel-management-hjzi.onrender.com/bookings/view")
       .then((response) => {
@@ -19,7 +20,10 @@ const Rooms = () => {
       .catch((error) => {
         console.error("Error:", error);
       });
+
+      alert("Wait for the backend to load ");
   }, []);
+
   const roomList = rooms.filter((room) => {
     return (
       room.number.toLowerCase().includes(searchedRoom.toLowerCase()) ||
